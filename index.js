@@ -14,6 +14,8 @@ function handleDevice(device) {
 
 function setupDevice(device) {
 	console.log('\tConnected');
+	
+	blinkLed5Times(new device.Led(device));
 	setInterval(function(){processDeviceInfo(device);}, 1000);
 }
 
@@ -22,4 +24,19 @@ function processDeviceInfo(device) {
 		console.log('\tRssi update : ' + rssi);
 		console.log('\tFiltered Rssi update : ' + kalmanFilter.filter(rssi));
 	});
+}
+
+function blinkLed5Times(led) {
+	led.config
+		.setColor(led.config.BLUE)
+		.setRiseTime(200)
+		.setHighTime(500)
+		.setFallTime(200)
+		.setPulseDuration(1100)
+		.setRepeatCount(5)
+		.setHighIntensity(30)
+		.setLowIntensity(1);
+
+	led.commitConfig();
+	led.play(true);
 }
