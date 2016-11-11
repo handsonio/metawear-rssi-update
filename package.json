@@ -1,0 +1,29 @@
+{
+  "name": "metawear-rssi-update",
+  "version": "1.0.0",
+  "description": "A potential way to get rssi updates from the MetaWear sensor without having to disconnect from it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-metawear-playground/metawear-rssi-update.git"
+  },
+  "keywords": [
+    "MetaWear",
+    "node.js",
+    "mbientlab",
+    "rssi",
+    "update"
+  ],
+  "author": "Alan Hortz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/node-metawear-playground/metawear-rssi-update/issues"
+  },
+  "homepage": "https://github.com/node-metawear-playground/metawear-rssi-update#readme",
+  "dependencies": {
+    "node-metawear": "^0.3.3"
+  }
+}
