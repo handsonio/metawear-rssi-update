@@ -25,6 +25,6 @@
   "homepage": "https://github.com/node-metawear-playground/metawear-rssi-update#readme",
   "dependencies": {
     "kalmanjs": "^1.0.0-beta",
-    "node-metawear": "^0.3.3"
+    "node-metawear": "git+https://github.com/alanhortz/node-metawear.git#noble-device-upgrade"
   }
 }
