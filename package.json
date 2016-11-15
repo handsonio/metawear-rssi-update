@@ -1,6 +1,6 @@
 {
   "name": "metawear-rssi-update",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A potential way to get rssi updates from the MetaWear sensor without having to disconnect from it.",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,6 @@
   "homepage": "https://github.com/node-metawear-playground/metawear-rssi-update#readme",
   "dependencies": {
     "kalmanjs": "^1.0.0-beta",
-    "node-metawear": "~0.3.3"
+    "node-metawear": "~0.3.4"
   }
 }
